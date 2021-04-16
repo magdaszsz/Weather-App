@@ -19,10 +19,14 @@ const fetch = require("node-fetch");
 
 const { KEY_WEATHER }  = process.env;
 
+
 exports.handler = async(event, context) => {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=lisbon&appid=${KEY_WEATHER}&units=metric`;
+  const cityData = JSON.parse(event.body);
+   const { city } = cityData;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${KEY_WEATHER}&units=metric`;
   try {
     const data = await fetch(url);
+    console.log(data)
     const dataJson =  await data.json();
     return {
       statusCode: 200, 
