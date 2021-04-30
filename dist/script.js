@@ -25,10 +25,7 @@ console.log(data)
 showData(data);
 }
 
-// btn.addEventListener('click', () => {
-//   const userInput = input.value;
-//   getData(userInput);
-// })
+
  
 
 function showData(data) {

@@ -1,0 +1,48 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+
+
+.container-fluid {
+  height: 100vh;
+  background-color: rgba(75, 207, 250, .7);
+}
+
+.content {
+  height: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1em;
+}
+
+.search {
+  position: relative;
+}
+
+input {
+  all: initial;
+  width: 90%;
+  height: 2rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: rgb(20, 18, 18);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+button {
+  all: initial;
+  position: absolute;
+  right: 1em;
+  top: 30%;
+  font-size: 1.5rem;
+}
+
+.output {
+  background: rgba(255, 255, 255, 0.2);
+  height: 70%;
+  margin-top: 2rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
