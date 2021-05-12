@@ -9,10 +9,18 @@ body {
   background-color: rgba(75, 207, 250, .7);
 }
 
+.country {
+  font-size: .8rem;
+}
+
 .content {
   height: 50%;
   background: rgba(255, 255, 255, 0.2);
   padding: 1em;
+}
+
+.temp {
+  font-size: 4.5rem;
 }
 
 .search {
@@ -44,5 +52,4 @@ button {
   height: 70%;
   margin-top: 2rem;
   border-radius: 10px;
-  text-transform: uppercase;
 }
